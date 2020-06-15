@@ -28,17 +28,17 @@ namespace PrimerParcial.UI.Registros
             this.DataContext = this.Articulos;
         }
 
-        private void buscarCarroButton_Click(object sender, RoutedEventArgs e)
+        private void BuscarCarroButton_Click(object sender, RoutedEventArgs e)
         {
-            var articulo = ArticulosBLL.Buscar(int.Parse())
+            var articulo = ArticulosBLL.Buscar(int.Parse(Producto))
         }
 
-        private void nuevoButton_Click(object sender, RoutedEventArgs e)
+        private void NuevoButton_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void guardarButton_Click(object sender, RoutedEventArgs e)
+        private void NuardarButton_Click(object sender, RoutedEventArgs e)
         {
 
         }

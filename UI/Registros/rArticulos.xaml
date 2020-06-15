@@ -15,9 +15,9 @@
             <StackPanel Orientation="Horizontal">
                 <!--TEXT BOX Y BOTON BUSCAR-->
 
-                <TextBox Name="idCarroTextBox" Width="40" HorizontalAlignment="Left" Margin="5,0" Text="{Binding ProductoId}"/>
+                <TextBox Name="ProductoIdTextBox" Width="40" HorizontalAlignment="Left" Margin="5,0" Text="{Binding ProductoId}"/>
                 
-                <Button Name="buscarCarroButton" Width="60" Height="20" Margin="5,0,0,0" Click="buscarCarroButton_Click">
+                <Button Name="BuscarCarroButton" Width="60" Height="20" Margin="5,0,0,0" Click="BuscarCarroButton_Click">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="/Resources/search.png" />
                         <Label Content="Buscar" Margin="4,0" Padding="-1"/>
@@ -40,21 +40,21 @@
 
             <StackPanel Orientation="Horizontal" Width="236" Margin="0,26,0,0">
                 <!--PANEL DE BOTONES-->
-                <Button Name="nuevoButton" Width="60" Height="20" Click="nuevoButton_Click">
+                <Button Name="NuevoButton" Width="60" Height="20" Click="NuevoButton_Click">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="/Resources/coche.png" />
                         <Label Content="Nuevo" Margin="4,0" Padding="-1"/>
                     </StackPanel>
                 </Button>
 
-                <Button Name="guardarButton" Width="67" Height="20" Margin="20,0,0,0" Click="guardarButton_Click">
+                <Button Name="GuardarButton" Width="67" Height="20" Margin="20,0,0,0" Click="GuardarButton_Click">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="/Resources/save.png" />
                         <Label Content="Guardar" Margin="4,0" Padding="-1"/>
                     </StackPanel>
                 </Button>
 
-                <Button Name="eliminarButton" Width="66" Height="20" Margin="20,0,0,0" Click="eliminarButton_Click">
+                <Button Name="EliminarButton" Width="66" Height="20" Margin="20,0,0,0" Click="EliminarButton_Click">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="/Resources/delete.png"/>
                         <Label Content="Eliminar" Margin="4,0" Padding="-1"/>
