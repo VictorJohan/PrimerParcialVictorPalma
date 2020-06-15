@@ -17,7 +17,7 @@
 
                 <TextBox Name="idCarroTextBox" Width="40" HorizontalAlignment="Left" Margin="5,0" Text="{Binding ProductoId}"/>
                 
-                <Button Name="buscarCarroButton" Width="60" Height="20" Margin="5,0,0,0">
+                <Button Name="buscarCarroButton" Width="60" Height="20" Margin="5,0,0,0" Click="buscarCarroButton_Click">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="/Resources/search.png" />
                         <Label Content="Buscar" Margin="4,0" Padding="-1"/>
@@ -30,31 +30,31 @@
             <TextBox Name="DescripcionTextBox" Width="200" Height="20" HorizontalAlignment="Left" Margin="5,0" Text="{Binding Descripcion}"/>
 
             <Label Content="Existencia" FontSize="11"/>
-            <TextBox Name="ExistenciaTextBox" Width="70" Height="20" HorizontalAlignment="Left" Margin="5,0" Text="{Binding Existencia}"/>
+            <TextBox Name="ExistenciaTextBox" Width="70" Height="20" HorizontalAlignment="Left" Margin="5,0" Text="{Binding Existencia}" TextChanged="ExistenciaTextBox_TextChanged"/>
 
             <Label Content="Cossto" FontSize="11"/>
-            <TextBox Name="CostoTextBox" Width="70" Height="20" HorizontalAlignment="Left" Margin="5,0"/>
+            <TextBox Name="CostoTextBox" Width="70" Height="20" HorizontalAlignment="Left" Margin="5,0" TextChanged="CostoTextBox_TextChanged"/>
 
             <Label Content="Valor Inventario" FontSize="11"/>
-            <TextBox Name="ValorInventarioTextBox" Width="70" Height="20" HorizontalAlignment="Left" Margin="5,0"/>
+            <TextBox Name="ValorInventarioTextBox" Width="70" Height="20" IsReadOnly="True" HorizontalAlignment="Left" Margin="5,0"/>
 
             <StackPanel Orientation="Horizontal" Width="236" Margin="0,26,0,0">
                 <!--PANEL DE BOTONES-->
-                <Button Name="nuevoButton" Width="60" Height="20" >
+                <Button Name="nuevoButton" Width="60" Height="20" Click="nuevoButton_Click">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="/Resources/coche.png" />
                         <Label Content="Nuevo" Margin="4,0" Padding="-1"/>
                     </StackPanel>
                 </Button>
 
-                <Button Name="guardarButton" Width="67" Height="20" Margin="20,0,0,0">
+                <Button Name="guardarButton" Width="67" Height="20" Margin="20,0,0,0" Click="guardarButton_Click">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="/Resources/save.png" />
                         <Label Content="Guardar" Margin="4,0" Padding="-1"/>
                     </StackPanel>
                 </Button>
 
-                <Button Name="eliminarButton" Width="66" Height="20" Margin="20,0,0,0">
+                <Button Name="eliminarButton" Width="66" Height="20" Margin="20,0,0,0" Click="eliminarButton_Click">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="/Resources/delete.png"/>
                         <Label Content="Eliminar" Margin="4,0" Padding="-1"/>
