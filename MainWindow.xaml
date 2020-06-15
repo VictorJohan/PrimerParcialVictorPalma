@@ -5,51 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PrimerParcial"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="450" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+        Title="Menu" Height="450" Width="450" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
     <Grid>
-        <StackPanel Orientation="Vertical" Margin="10,10,10,10"><!--STACK PANEL PRINCIPAL-->
-            
-            <Label Content="Id Carro" FontWeight="Bold"/>
-            
-            <StackPanel Orientation="Horizontal"><!--TEXT BOX Y BOTON BUSCAR-->
-                
-                <TextBox Name="idCarroTextBox" Width="50" HorizontalAlignment="Left" Margin="5,0"/>
-                <Button Name="buscarCarroButton" Width="60" Height="20" Margin="20,0,0,0">
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="/Resources/search.png" />
-                        <Label Content="Buscar" FontWeight="Bold" Padding="-1"/>
-                    </StackPanel>
-                </Button>
-                
-            </StackPanel>
-             
-            
-            <!--CONTINUAR AQUI-->
-            
-            
-            <StackPanel Orientation="Horizontal" Width="252"> <!--PANEL DE BOTONES-->
-                <Button Name="nuevoButton" Width="60" Height="20" Margin="20,0,0,0">
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="/Resources/coche.png" />
-                        <Label Content="Nuevo" FontWeight="Bold" Padding="-1"/>
-                    </StackPanel>
-                </Button>
+        <StackPanel><!--STACK PANEL PRINCIPAL-->
 
-                <Button Name="guardarButton" Width="60" Height="20" Margin="20,0,0,0">
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="/Resources/save.png" />
-                        <Label Content="Guardar" FontWeight="Bold" Padding="-1"/>
-                    </StackPanel>
-                </Button>
+            <Menu Height="18">
+                <MenuItem Header="Registros">
+                    <MenuItem Name="RegistrosMenuItem" Header="Registrar Vehiculos" Click="RegistrosMenuItem_Click"/>
 
-                <Button Name="eliminarButton" Width="66" Height="20" Margin="20,0,0,0">
-                    <StackPanel Orientation="Horizontal">
-                        <Image Source="/Resources/delete.png"/>
-                        <Label Content="Eliminar" FontWeight="Bold" Padding="-1"/>
-                    </StackPanel>
-                </Button>
-
-            </StackPanel><!--FIN PANEL DE BOTONES-->
+                </MenuItem>
+            </Menu>
 
         </StackPanel><!--STACK PANEL PRINCIPAL-->
     </Grid>
