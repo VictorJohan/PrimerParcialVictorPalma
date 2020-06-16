@@ -10,12 +10,12 @@
         <StackPanel Orientation="Vertical" Margin="10,10,10,10">
             <!--STACK PANEL PRINCIPAL-->
 
-            <Label Content="ProductoId" FontSize="11"/>
+            <Label Content="ArticuloId" FontSize="11"/>
 
+            <!--TEXT BOX Y BOTON BUSCAR-->
             <StackPanel Orientation="Horizontal">
-                <!--TEXT BOX Y BOTON BUSCAR-->
-
-                <TextBox Name="ProductoIdTextBox" Width="40" HorizontalAlignment="Left" Margin="5,0" Text="{Binding ProductoId}"/>
+              
+                <TextBox Name="ArticuloIdTextBox" Width="40" HorizontalAlignment="Left" Margin="5,0" Text="{Binding ArticuloId}"/>
                 
                 <Button Name="BuscarCarroButton" Width="60" Height="20" Margin="5,0,0,0" Click="BuscarCarroButton_Click">
                     <StackPanel Orientation="Horizontal">
@@ -26,20 +26,25 @@
 
             </StackPanel>
 
+            <!--DESCRIPCION-->
             <Label Content="Descrpcion" FontSize="11"/>
             <TextBox Name="DescripcionTextBox" Width="200" Height="20" HorizontalAlignment="Left" Margin="5,0" Text="{Binding Descripcion}"/>
 
+            <!--EXISTENCIA-->
             <Label Content="Existencia" FontSize="11"/>
             <TextBox Name="ExistenciaTextBox" Width="70" Height="20" HorizontalAlignment="Left" Margin="5,0" Text="{Binding Existencia}" TextChanged="ExistenciaTextBox_TextChanged"/>
 
+            <!--COSTO-->
             <Label Content="Cossto" FontSize="11"/>
-            <TextBox Name="CostoTextBox" Width="70" Height="20" HorizontalAlignment="Left" Margin="5,0" TextChanged="CostoTextBox_TextChanged"/>
+            <TextBox Name="CostoTextBox" Width="70" Height="20" HorizontalAlignment="Left" Margin="5,0" TextChanged="CostoTextBox_TextChanged" Text="{Binding Costo}"/>
 
+            <!--VALOR INVENTARIO-->
             <Label Content="Valor Inventario" FontSize="11"/>
-            <TextBox Name="ValorInventarioTextBox" Width="70" Height="20" IsReadOnly="True" HorizontalAlignment="Left" Margin="5,0"/>
+            <TextBox Name="ValorInventarioTextBox" Width="70" Height="20" IsReadOnly="True" HorizontalAlignment="Left" Margin="5,0" Text="{Binding ValorInventario}" TextChanged="ValorInventarioTextBox_TextChanged"/>
 
+            <!--PANEL DE BOTONES-->
             <StackPanel Orientation="Horizontal" Width="236" Margin="0,26,0,0">
-                <!--PANEL DE BOTONES-->
+                
                 <Button Name="NuevoButton" Width="60" Height="20" Click="NuevoButton_Click">
                     <StackPanel Orientation="Horizontal">
                         <Image Source="/Resources/coche.png" />

@@ -13,7 +13,7 @@ namespace PrimerParcial.BLL
     {
         public static bool Guardar(Articulos articulo)
         {
-            if (!Existe(articulo.ProductoId))
+            if (!Existe(articulo.ArticuloId))
             {
                 return Insertar(articulo);
             }
@@ -30,7 +30,7 @@ namespace PrimerParcial.BLL
 
             try
             {
-                ok = contexto.Articulos.Any(e => e.ProductoId == id);
+                ok = contexto.Articulos.Any(e => e.ArticuloId == id);
             }
             catch (Exception)
             {

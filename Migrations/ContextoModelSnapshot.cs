@@ -17,7 +17,7 @@ namespace PrimerParcial.Migrations
 
             modelBuilder.Entity("PrimerParcial.Entidades.Articulos", b =>
                 {
-                    b.Property<int>("ProductoId")
+                    b.Property<int>("ArticuloId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
@@ -30,10 +30,10 @@ namespace PrimerParcial.Migrations
                     b.Property<int>("Existencia")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("ValorInventario")
-                        .HasColumnType("INTEGER");
+                    b.Property<double>("ValorInventario")
+                        .HasColumnType("REAL");
 
-                    b.HasKey("ProductoId");
+                    b.HasKey("ArticuloId");
 
                     b.ToTable("Articulos");
                 });
